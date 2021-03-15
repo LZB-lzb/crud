@@ -54,8 +54,14 @@
                     message: "请正确输入餐品信息",
                     type: "warning",
                 })
-
-
+            },
+            quitedit() {
+                return this.$router.push('/shop')
+            }
+        },
+        created() {
+            if (!this.$store.state.menu.login) {
+                return this.$router.push('/')
             }
         },
     }

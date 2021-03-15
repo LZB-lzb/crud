@@ -40,7 +40,7 @@
     methods: {
       handleEdit(index, row) {
         // console.log(index, row);
-          this.$store.commit("editshop", index + 1);
+        this.$store.commit("editshop", index + 1);
         this.$store.state.menu.currentmenu = 5
         this.$router.push('/editshop')
       },
@@ -66,6 +66,9 @@
       }
     },
     created() {
+      if (!this.$store.state.menu.login) {
+        return this.$router.push('/')
+      }
       this.$store.commit("getdata");
     },
   }
