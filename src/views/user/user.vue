@@ -60,12 +60,7 @@
             onSubmit() {
                 console.log('submit!');
             }
-        },
-        mounted() {
-                if(!this.$store.state.menu.login){
-                    this.$router.push('/')
-                }
-        },
+        }
     }
 </script>
 

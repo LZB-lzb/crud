@@ -66,9 +66,6 @@
       }
     },
     created() {
-      if (!this.$store.state.menu.login) {
-        return this.$router.push('/')
-      }
       this.$store.commit("getdata");
     },
   }

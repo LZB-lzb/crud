@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Cookie from 'js-cookie'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,18 @@ const routes = [
 
 const router = new VueRouter({
   routes
+})
+router.beforeEach((to, from, next) => {
+  //to 将要访问的路径
+  //from 代表从哪个路径跳转而来
+  //next 是一个函数，表示放行
+  //  next() 放行    next('/login') 强制跳转
+  // console.log(to)
+  // console.log(from)
+  if (to.path === '/') return next()
+  let login = JSON.parse(Cookie.get('login'))
+  if (!login) return next('/')
+  next()
 })
 
 export default router

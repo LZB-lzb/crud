@@ -49,12 +49,7 @@
                     type: "warning",
                 })
             }
-        },
-        created() {
-            if (!this.$store.state.menu.login) {
-                return this.$router.push('/')
-            }
-        },
+        }
     }
 </script>
 
