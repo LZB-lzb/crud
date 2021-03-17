@@ -44,6 +44,7 @@
                                 message: "添加成功!",
                             })
                         })
+                        .catch((err)=>{err})
                 } this.$message({
                     message: "请正确输入餐品信息",
                     type: "warning",
