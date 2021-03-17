@@ -191,6 +191,7 @@
                 }, 400);
               }, 2000);
             })
+            .catch((err)=>{err})
         }
         return this.$confirm("确定要登陆吗？")
           .then((_) => {
@@ -203,7 +204,7 @@
               }, 400);
             }, 2000);
           })
-
+          .catch((err)=>{err})
       },
       cancelForm() {
         this.loading = false;
