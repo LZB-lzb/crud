@@ -170,7 +170,7 @@
         }
       },
       handleClose() {
-        if (!this.form.name && !this.form.password) {
+        if (!this.form.name || !this.form.password) {
           return this.apperror(1)
         }
         if (this.loading) {
