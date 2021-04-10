@@ -1,0 +1,90 @@
+{
+  "shop": [
+    {
+      "id": 1,
+      "money": "$30",
+      "name": "披萨",
+      "message": "披萨！上好的披萨！"
+    },
+    {
+      "id": 2,
+      "money": "$18",
+      "name": "意面",
+      "message": "啊！意面！好吃的意面！"
+    },
+    {
+      "id": 3,
+      "money": "$21",
+      "name": "焗饭",
+      "message": "焗饭！好吃的焗饭！"
+    },
+    {
+      "id": 4,
+      "money": "$25",
+      "name": "小吃拼盘",
+      "message": "天哪！是好吃的小吃拼盘！"
+    },
+    {
+      "name": "芒果",
+      "money": "$25",
+      "message": "大芒果",
+      "id": 5
+    }
+  ],
+  "menu": [
+    {
+      "path": "/",
+      "name": "home",
+      "label": "首页",
+      "icon": "s-home",
+      "url": "Home/Home"
+    },
+    {
+      "path": "/shop",
+      "name": "shop",
+      "label": "餐品管理页",
+      "icon": "food",
+      "url": "ShopManage/ShopManage"
+    },
+    {
+      "path": "/user",
+      "name": "user",
+      "label": "用户管理页",
+      "icon": "user",
+      "url": "UserManage/UserManage"
+    },
+    {
+      "label": "其他",
+      "icon": "location",
+      "children": [
+        {
+          "path": "/addshop",
+          "name": "addshop",
+          "label": "添加菜品",
+          "icon": "fork-spoon",
+          "url": "Other/addshop"
+        },
+        {
+          "path": "/editshop",
+          "name": "editshop",
+          "label": "更新菜品",
+          "icon": "knife-fork",
+          "url": "Other/editshop"
+        }
+      ]
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "lzb",
+      "password": "123"
+    },
+    {
+      "name": "ad",
+      "password": "123",
+      "rpassword": "123",
+      "id": 2
+    }
+  ]
+}
