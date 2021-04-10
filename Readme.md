@@ -4,14 +4,14 @@
 ```
 
 ```
-该文件package.json下不包括json-server，若需要请自行安装，或可直接跳过第二步
+该文件package.json下不包括json-server，若需要请自行安装（npm install json-server），或可直接跳过第二步
 ```
 
 ```
 2.在文件夹下打开终端2执行 json-server --watch db.json
 ```
 ```
-npm run serve
+3.npm run serve
 ```
 ```
 点击右上角头像登录或注册解锁完整路由菜单
