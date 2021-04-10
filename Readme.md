@@ -1,4 +1,7 @@
-//在文件夹下打开终端1执行 npm i 或者cnpm i
+# crud
+```
+1.在文件夹下打开终端1执行 npm i 或者cnpm i
+```
 
 //在文件夹下打开终端2执行 json-server --watch db.json
 
